@@ -73,7 +73,7 @@ public class Grid : MonoBehaviour
 	{
 		List<Node> neighbours = new List<Node>();
 		//X
-        if (node.gridX-1 > 0)
+        if (node.gridX-1 >= 0)
         {
 			neighbours.Add(grid[node.gridX - 1, node.gridY]);
 		}
@@ -82,7 +82,7 @@ public class Grid : MonoBehaviour
 			neighbours.Add(grid[node.gridX + 1, node.gridY]);
 		}
 		//Y
-		if (node.gridY - 1 > 0)
+		if (node.gridY - 1 >= 0)
 		{
 			neighbours.Add(grid[node.gridX, node.gridY -1]);
 		}
