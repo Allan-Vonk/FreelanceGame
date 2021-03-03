@@ -41,7 +41,7 @@ public class Grid : MonoBehaviour
 			{
 				Vector3 worldPoint = worldBottomLeft + Vector3.right * (x * nodeDiameter + nodeRadius) + Vector3.forward * (y * nodeDiameter + nodeRadius);
 				bool walkable = !(Physics.CheckSphere(worldPoint,nodeRadius,unwalkableMask));
-				grid[x, y] = new Node(walkable, worldPoint, x, y);
+				grid[x, y] = new Node(false, worldPoint, x, y);
 			}
 		}
 	}
@@ -69,6 +69,30 @@ public class Grid : MonoBehaviour
 
 		return neighbours;
 	}
+	public List<Node> Get4Neighbours (Node node)
+	{
+		List<Node> neighbours = new List<Node>();
+		//X
+        if (node.gridX-1 > 0)
+        {
+			neighbours.Add(grid[node.gridX - 1, node.gridY]);
+		}
+		if (node.gridX + 1 < gridSizeX)
+		{
+			neighbours.Add(grid[node.gridX + 1, node.gridY]);
+		}
+		//Y
+		if (node.gridY - 1 > 0)
+		{
+			neighbours.Add(grid[node.gridX, node.gridY -1]);
+		}
+		if (node.gridY + 1 < gridSizeY)
+		{
+			neighbours.Add(grid[node.gridX, node.gridY + 1]);
+		}
+		return neighbours;
+	}
+
 	public Node NodeFromWorldPoint (Vector3 worldPosition)
 	{
 		float percentX = (worldPosition.x + gridWorldSize.x/2) / gridWorldSize.x;

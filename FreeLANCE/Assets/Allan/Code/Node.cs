@@ -9,7 +9,8 @@ public class Node : IHeapItem<Node>
 	public int gridX;
 	public int gridY;
 
-	public int mzValue;
+	public bool visited;
+	public bool connected;
 
 	public int gCost;
 	public int hCost;
@@ -22,6 +23,8 @@ public class Node : IHeapItem<Node>
 		worldPosition = _worldPos;
 		gridX = _gridX;
 		gridY = _gridY;
+		visited = false;
+		connected = false;
 	}
 
 	public int fCost
