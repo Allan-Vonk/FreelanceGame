@@ -12,7 +12,7 @@ public class Grid : MonoBehaviour
 	public Node[,] grid;
 
 	float nodeDiameter;
-	int gridSizeX, gridSizeY;
+	public int gridSizeX, gridSizeY;
 
 	void Start ()
 	{
