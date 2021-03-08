@@ -35,7 +35,6 @@ public class Pathfinding : MonoBehaviour
             if (currentNode == targetNode)
             {
                 sw.Stop();
-                print("path found" + sw.ElapsedMilliseconds +" MS");
                 return PathToQueue(RetracePath(startNode, targetNode));
             }
             foreach (Node neigbour in grid.Get4Neighbours(currentNode))
