@@ -43,7 +43,7 @@ public class MazeGeneration : MonoBehaviour
     }
     private void ClearEnd (Node node)
     {
-        List<Node>neigbours = grid.GetNeighbours(node);
+        List<Node>neigbours = grid.Get4Neighbours(node);
         foreach (Node node1 in neigbours)
         {
             node1.walkable = true;
