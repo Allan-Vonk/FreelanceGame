@@ -43,7 +43,7 @@ public class MazeGeneration : MonoBehaviour
     }
     private void ClearEnd (Node node)
     {
-        List<Node>neigbours = grid.GetNeighbours(node);
+        List<Node>neigbours = grid.Get4Neighbours(node);
         foreach (Node node1 in neigbours)
         {
             node1.walkable = true;
@@ -104,16 +104,16 @@ public class MazeGeneration : MonoBehaviour
         //X
         for (int i = 0; i < grid.gridSizeX; i++)
         {
-            if (nodeGrid[i,1].walkable)
+            if (nodeGrid[i, 1].walkable)
             {
-                PossibleExits.Add(nodeGrid[i, 1]);
+                PossibleExits.Add(nodeGrid[i, grid.gridSizeY-2]);
             }
         }
         for (int i = 0; i < grid.gridSizeX; i++)
         {
             if (nodeGrid[i, grid.gridSizeY - 1].walkable)
             {
-                PossibleExits.Add(nodeGrid[i, grid.gridSizeY - 1]);
+                PossibleExits.Add(nodeGrid[i, 1]);
             }
         }
         //Y
@@ -121,14 +121,14 @@ public class MazeGeneration : MonoBehaviour
         {
             if (nodeGrid[1, i].walkable)
             {
-                PossibleExits.Add(nodeGrid[1, i]);
+                PossibleExits.Add(nodeGrid[grid.gridSizeX-2, i]);
             }
         }
         for (int i = 0; i < grid.gridSizeY; i++)
         {
             if (nodeGrid[grid.gridSizeX - 1, i].walkable)
             {
-                PossibleExits.Add(nodeGrid[grid.gridSizeX - 1, i]);
+                PossibleExits.Add(nodeGrid[1, i]);
             }
         }
         foreach (var item in PossibleExits)
