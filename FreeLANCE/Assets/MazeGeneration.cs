@@ -22,6 +22,11 @@ public class MazeGeneration : MonoBehaviour
         nodeGrid = grid.grid;
         Cellset = new List<Node>();
         PossibleExits = new List<Node>();
+
+        initialize();
+    }
+    private void initialize ()
+    {
         GenerateMaze();
         ClearStart();
         GenerateExit();
@@ -137,7 +142,7 @@ public class MazeGeneration : MonoBehaviour
         List<Queue<Vector3>> ordered = PathList.OrderBy(f => f.Count).ToList();
         ordered.Reverse();
         List<Vector3>path = ordered[0].ToList();
-        if (path.Count < 30)
+        if (path.Count < 40)
         {
             SceneManager.LoadScene(0);
         }
