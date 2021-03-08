@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
 	<object class="Workspace" id="{b787b3b9-84ec-42c0-9688-350e2bbeab78}">
+		<property name="builtBanksOutputDirectory">
+			<value>Build</value>
+		</property>
 		<relationship name="masterEventFolder">
 			<destination>{45f2abc1-fac0-4a20-9799-9fb5b91ee09b}</destination>
 		</relationship>
@@ -27,6 +30,9 @@
 		</relationship>
 		<relationship name="profilerSessionFolder">
 			<destination>{7a8c82e8-09d9-4180-a503-6daae6ada48b}</destination>
+		</relationship>
+		<relationship name="platforms">
+			<destination>{99105a4b-c296-4786-8c47-63367ea4c9c3}</destination>
 		</relationship>
 	</object>
 </objects>
