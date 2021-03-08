@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{b34bc1bc-2c18-4ada-a1cb-f0ffe6f3b78f}">
+		<property name="assetPath">
+			<value>Breadcrumbs1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.4239166666666665</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{27d16e32-8f9e-430a-b143-c2fab46dfb19}</destination>
+		</relationship>
+	</object>
+</objects>

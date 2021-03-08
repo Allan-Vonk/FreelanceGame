@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{6bc4f580-a993-4875-bb84-57d13ecae460}">
+		<property name="assetPath">
+			<value>GhostWind.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>35.683265306122451</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{27d16e32-8f9e-430a-b143-c2fab46dfb19}</destination>
+		</relationship>
+	</object>
+</objects>
