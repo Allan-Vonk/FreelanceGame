@@ -14,8 +14,15 @@ public class MazeGeneration : MonoBehaviour
     Pathfinding pf;
     List<Node>PossibleExits;
     List<Queue<Vector3>>PathList;
+
+    List<GameObject>Walls;
+    MeshFilter mf;
+    MeshCollider mc;
     private void Start ()
     {
+        mc = GetComponent<MeshCollider>();
+        mf = GetComponent<MeshFilter>();
+        Walls = new List<GameObject>();
         pf = GetComponent<Pathfinding>();
         PathList = new List<Queue<Vector3>>();
         grid = GetComponent<Grid>();
@@ -31,6 +38,24 @@ public class MazeGeneration : MonoBehaviour
         ClearStart();
         GenerateExit();
         GenerateWalls();
+        MergeWalls();
+    }
+    private void MergeWalls ()
+    {
+        List<CombineInstance> combineInstances = new List<CombineInstance>();
+        foreach (var item in Walls)
+        {
+            CombineInstance ci = new CombineInstance();
+            MeshFilter meshFilter = item.GetComponent<MeshFilter>();
+            ci.mesh = meshFilter.sharedMesh;
+            ci.transform = meshFilter.transform.localToWorldMatrix;
+            combineInstances.Add(ci);
+            item.SetActive(false);
+        }
+        CombineInstance[] instanceArray = combineInstances.ToArray();
+        mf.mesh = new Mesh();
+        mf.mesh.CombineMeshes(instanceArray);
+        mc.sharedMesh = mf.mesh;
     }
     private void ClearStart ()
     {
@@ -95,6 +120,7 @@ public class MazeGeneration : MonoBehaviour
             if (node.walkable == false)
             {
                 GameObject wall = Instantiate(wallPrefab);
+                Walls.Add(wall);
                 wall.transform.position = node.worldPosition + new Vector3(0,2,0);
             }
         }
@@ -150,12 +176,5 @@ public class MazeGeneration : MonoBehaviour
         Debug.Log(path.Count);
         EndNode = grid.NodeFromWorldPoint(path[0]);
         ClearEnd(EndNode);
-    }
-    private void OnDrawGizmos ()
-    {
-        //foreach (var item in PossibleExits)
-        //{
-        //    Gizmos.DrawIcon(item.worldPosition, "Exit");
-        //}
     }
 }
