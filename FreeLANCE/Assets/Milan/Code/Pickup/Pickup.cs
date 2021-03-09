@@ -6,24 +6,24 @@ public class Pickup : MonoBehaviour
 {
     private int value = 5;
 
+    private void Awake()
+    {
+        ScoreManager.instance.SaveAndLoadPlayer();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         PickingUp();
     }
 
-    private void FixedUpdate()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            PickingUp();
-            ScoreManager.RefreshUI();
-        }
-    }
-
     public void PickingUp()
     {
-        ScoreManager.score += value;
         ScoreManager.pickedUp = true;
+        ScoreManager.instance.score += value;
+
+        ScoreManager.instance.RefreshUI();
+        ScoreManager.instance.SaveAndLoadPlayer();
+
         gameObject.SetActive(false);
     }
 }
