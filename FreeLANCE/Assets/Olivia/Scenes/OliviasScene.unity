@@ -332,7 +332,7 @@ GameObject:
   - component: {fileID: 1986055261}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -407,7 +407,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986055255}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.51, y: 1.31, z: 4.84}
+  m_LocalPosition: {x: 20.56, y: 1.31, z: 4.84}
   m_LocalScale: {x: 0.6, y: 2.3, z: 0.01}
   m_Children: []
   m_Father: {fileID: 0}
@@ -427,8 +427,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 518700123}
   _movementSpeed: 4
-  _maxDist: 4
-  _minDist: 8
+  _maxDist: 8
+  _minDist: 6
 --- !u!54 &1986055261
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -470,7 +470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6848427343931558531, guid: c8aee01b8a967984293198a610cb4cb4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.7
+      value: 20.34
       objectReference: {fileID: 0}
     - target: {fileID: 6848427343931558531, guid: c8aee01b8a967984293198a610cb4cb4, type: 3}
       propertyPath: m_LocalRotation.w

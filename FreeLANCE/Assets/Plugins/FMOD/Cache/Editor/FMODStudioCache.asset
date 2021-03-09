@@ -1,5 +1,45 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2962446308250173367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Ryan/FMod/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637507971854979607
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 652
+  Exists: 1
+--- !u!114 &-477085613135710058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../../../../../Documents/Fmod/At the end/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637503666947251644
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,15 +53,15 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 1390703157669274453}
-  - {fileID: 1931658188058385284}
+  - {fileID: -2962446308250173367}
+  - {fileID: 8298410221970957135}
   EditorEvents: []
   EditorParameters: []
   MasterBanks:
-  - {fileID: 1931658188058385284}
+  - {fileID: 8298410221970957135}
   StringsBanks:
-  - {fileID: 1390703157669274453}
-  stringsBankWriteTime: 637503666947301519
+  - {fileID: -2962446308250173367}
+  stringsBankWriteTime: 637507971854979607
   cacheVersion: 6
 --- !u!114 &1390703157669274453
 MonoBehaviour:
@@ -60,6 +100,46 @@ MonoBehaviour:
   Name: Master
   StudioPath: bank:/Master
   lastModified: 637503666947251644
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &2592334690545539361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../../../../../Documents/Fmod/At the end/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637503666947301519
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 700
+  Exists: 1
+--- !u!114 &8298410221970957135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Ryan/FMod/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637507971854939735
   LoadResult: 0
   FileSizes: []
   Exists: 1

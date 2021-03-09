@@ -11,7 +11,7 @@ public static class SaveSystem
         FileStream stream = new FileStream(path, FileMode.Create);
 
         PlayerData data = new PlayerData();
-        data.HighScore = 0;//Highscore}
+        data.HighScore = ScoreManager.instance.score;
 
         formatter.Serialize(stream, data);
         stream.Close();
