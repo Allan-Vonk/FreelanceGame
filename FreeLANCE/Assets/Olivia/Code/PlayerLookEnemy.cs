@@ -6,9 +6,6 @@ public class PlayerLookEnemy : MonoBehaviour
     {
       
     }
-
-
-
     // RaycastHit hit;
        // Ray ray = Camera.current.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
 
@@ -17,10 +14,10 @@ public class PlayerLookEnemy : MonoBehaviour
        //     Debug.Log("I have been rayed");
        //     if (hit.transform.CompareTag("Enemy")) EnemyInSight();
         //} 
-    }
+    //}
 
-    public void EnemyInSight()
-    {
-        Debug.Log("I have been spotted");
-    }
+    //public void EnemyInSight()
+    //{
+    //    Debug.Log("I have been spotted");
+    //}
 }

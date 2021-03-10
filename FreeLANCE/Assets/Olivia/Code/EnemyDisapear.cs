@@ -6,9 +6,8 @@ public class EnemyDisapear : MonoBehaviour
 {
     void Update()
     {
-       Ray
-
+       //Ray
        //https://www.youtube.com/watch?v=Bfdvbfk89IY
-       
+       //^^RickRoll
     }
 }

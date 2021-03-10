@@ -6,16 +6,26 @@ public class Unit : MonoBehaviour
 {
     public float speed = 1;
     public float checkRadius = .5f;
-    private Queue<Vector3> path;
-    public Transform target;
+    public Queue<Vector3> path;
+    public Transform Target
+    {
+        get { return target; }
+        set { SetTarget(value); }
+    }
+    private Transform target;
     private Pathfinding pathfinding;
     private void Start ()
     {
         pathfinding = FindObjectOfType<Pathfinding>();
     }
-    private void Update ()
+    public void SetTarget (Transform value)
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) path = pathfinding.FindPath(transform.position, target.position);
+        Debug.Log("Setting target and starting pathfinding");
+        target = value;
+        if (target != null)
+        {
+            path = pathfinding.FindPath(transform.position, target.position);
+        }
     }
     private void FixedUpdate ()
     {
@@ -24,11 +34,20 @@ public class Unit : MonoBehaviour
             if (Vector3.Distance(transform.position, path.Peek()) > checkRadius) MoveToNextPosition();
             else path.Dequeue();
         }
+        if (path != null && path.Count == 0)
+        {
+            StopPath();
+        }
     }
     private void MoveToNextPosition ()
     {
         Vector3 dir =  (path.Peek() - transform.position).normalized;
         transform.position += dir * speed;
+    }
+    private void StopPath ()
+    {
+        path = null;
+        target = null;
     }
     private void OnDrawGizmos ()
     {

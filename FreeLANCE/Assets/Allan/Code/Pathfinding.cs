@@ -11,13 +11,6 @@ public class Pathfinding : MonoBehaviour
     {
         grid = GetComponent<Grid>();
     }
-    private void Update ()
-    {
-        if (Input.GetButtonDown("Jump"))
-        {
-            FindPath(seeker.position, target.position);
-        }
-    }
     public Queue<Vector3> FindPath (Vector3 startPos, Vector3 targetPos)
     {
         Stopwatch sw = new Stopwatch();

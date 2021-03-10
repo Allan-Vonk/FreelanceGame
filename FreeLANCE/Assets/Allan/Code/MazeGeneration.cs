@@ -87,22 +87,14 @@ public class MazeGeneration : MonoBehaviour
             int count = 0;
             foreach (Node node in neigbours)
             {
-                if (node.walkable == true)
-                {
-                    count++;
-                }
+                if (node.walkable == true)count++;
             }
             if (count <2)
             {
                 randomNode.walkable = true;
                 foreach (Node node in neigbours)
                 {
-                    if (node.visited == false)
-                    {
-
-                        Cellset.Add(node);
-                        
-                    }
+                    if (node.visited == false)Cellset.Add(node);
                     node.visited = true;
                 }
             }
