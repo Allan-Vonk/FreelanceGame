@@ -6,6 +6,8 @@ public class PlayerSounds : MonoBehaviour
 {
     [Header("FMod Settings")]
     [SerializeField] [FMODUnity.EventRef] private string m_footstepEventPath;
+    [SerializeField] [FMODUnity.EventRef] private string m_collectItemEventPath;
+    [SerializeField] [FMODUnity.EventRef] private string m_dropBreadcrumbsEventPath;
     [SerializeField] private string m_speedParameterName;
 
     [Header("Playback Settings")]
@@ -54,5 +56,21 @@ public class PlayerSounds : MonoBehaviour
         //_footstep.setParameterByName(m_speedParameterName, f_playerRunning);
         _footstep.start();
         _footstep.release();
+    }
+
+    public void PlayCollectItem()
+    {
+        FMOD.Studio.EventInstance _collectItem = FMODUnity.RuntimeManager.CreateInstance(m_collectItemEventPath);
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(_collectItem, transform, GetComponent<Rigidbody>());
+        _collectItem.start();
+        _collectItem.release();
+    }
+
+    public void PlayDropBreadcrumbs()
+    {
+        FMOD.Studio.EventInstance _dropBreadcrumbs = FMODUnity.RuntimeManager.CreateInstance(m_dropBreadcrumbsEventPath);
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(_dropBreadcrumbs, transform, GetComponent<Rigidbody>());
+        _dropBreadcrumbs.start();
+        _dropBreadcrumbs.release();
     }
 }

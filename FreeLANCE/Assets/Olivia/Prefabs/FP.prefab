@@ -93,6 +93,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_footstepEventPath: event:/SFX/Player/Footsteps
+  m_collectItemEventPath: event:/SFX/Player/ItemCollection
+  m_dropBreadcrumbEventPath: event:/SFX/Player/BreadCrumbs
   m_speedParameterName: 
   m_stepDistance: 2
   m_startRunningTime: 0.3
