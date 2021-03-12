@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1798512034970239620, guid: c8aee01b8a967984293198a610cb4cb4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6848427343931558530, guid: c8aee01b8a967984293198a610cb4cb4, type: 3}
       propertyPath: m_Name
       value: FP
@@ -509,7 +513,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 98b8ff23584b3e9449de9015c044ffdb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -547,7 +551,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324225637}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -48.21, y: 0.708, z: -45.33}
+  m_LocalPosition: {x: -28.9, y: 0.708, z: -34.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -566,7 +570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.05
-  checkRadius: 0.5
+  checkRadius: 1
 --- !u!114 &1324225643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,6 +584,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 2127310236}
+  speed: 0.005
+  lastKnowPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1337346431
 GameObject:
   m_ObjectHideFlags: 0
