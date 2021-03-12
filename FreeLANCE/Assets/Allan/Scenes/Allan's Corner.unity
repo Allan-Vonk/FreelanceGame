@@ -476,7 +476,7 @@ GameObject:
   - component: {fileID: 1324225643}
   m_Layer: 0
   m_Name: NightMare
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -570,7 +570,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.05
-  checkRadius: 1
+  checkRadius: 1.5
+  pathState: 0
+  nextTarget: {x: 0, y: 0, z: 0}
 --- !u!114 &1324225643
 MonoBehaviour:
   m_ObjectHideFlags: 0

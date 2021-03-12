@@ -7,6 +7,8 @@ public class Unit : MonoBehaviour
     public float speed = 1;
     public float checkRadius = .5f;
     public Queue<Vector3> path;
+    public bool pathState;
+    public Vector3 nextTarget;
     public Vector3 Target
     {
         get { return target; }
@@ -27,18 +29,24 @@ public class Unit : MonoBehaviour
             path = pathfinding.FindPath(transform.position, target);
         }
     }
+    private void Update ()
+    {
+        if (path != null && path.Count >0)
+        {
+            if (Vector3.Distance(transform.position, path.Peek()) < checkRadius)
+            {
+                path.Dequeue();
+                Debug.Log("Dequeing");
+            }
+        }
+    }
     private void FixedUpdate ()
     {
         if (path != null && path.Count > 0)
         {
             if (Vector3.Distance(transform.position, path.Peek()) > checkRadius) MoveToNextPosition();
-            else 
-            {
-                Debug.Log("Dequeing");
-                path.Dequeue();
-            }
         }
-        if (path != null && path.Count == 0)
+        else if (path != null)
         {
             StopPath();
         }
