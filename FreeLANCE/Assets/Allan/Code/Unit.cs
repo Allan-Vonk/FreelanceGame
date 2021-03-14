@@ -22,7 +22,6 @@ public class Unit : MonoBehaviour
     }
     public void SetTarget (Vector3 value)
     {
-        Debug.Log("Setting target and starting pathfinding");
         target = value;
         if (target != Vector3.zero)
         {
@@ -36,7 +35,6 @@ public class Unit : MonoBehaviour
             if (Vector3.Distance(transform.position, path.Peek()) < checkRadius)
             {
                 path.Dequeue();
-                Debug.Log("Dequeing");
             }
         }
     }

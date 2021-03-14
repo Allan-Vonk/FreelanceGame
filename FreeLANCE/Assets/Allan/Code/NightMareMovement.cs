@@ -30,8 +30,12 @@ public class NightMareMovement : MonoBehaviour
     {
         pf = FindObjectOfType<Pathfinding>();
         grid = FindObjectOfType<Grid>();
-        possibleWanderTargets = GatherPossibleWanderTargets();
         unit = GetComponent<Unit>();
+        Invoke("initialize", 2f);
+    }
+    void initialize ()
+    {
+        possibleWanderTargets = GatherPossibleWanderTargets();
     }
     private void Update ()
     {
@@ -56,7 +60,10 @@ public class NightMareMovement : MonoBehaviour
         }
         if (canSeeTarget == false && unit.Target == Vector3.zero)
         {
-            unit.Target = possibleWanderTargets[Random.Range(0, possibleWanderTargets.Count)].worldPosition;
+            if (possibleWanderTargets != null)
+            {
+                unit.Target = possibleWanderTargets[Random.Range(0, possibleWanderTargets.Count)].worldPosition;
+            }
         }
     }
     private List<Node> GatherPossibleWanderTargets ()

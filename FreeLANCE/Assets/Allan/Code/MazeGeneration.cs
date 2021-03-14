@@ -55,6 +55,9 @@ public class MazeGeneration : MonoBehaviour
         CombineInstance[] instanceArray = combineInstances.ToArray();
         mf.mesh = new Mesh();
         mf.mesh.CombineMeshes(instanceArray);
+        mf.mesh.RecalculateNormals();
+        mf.mesh.RecalculateTangents();
+        mf.mesh.RecalculateBounds();
         mc.sharedMesh = mf.mesh;
     }
     private void ClearStart ()
@@ -77,7 +80,6 @@ public class MazeGeneration : MonoBehaviour
     private void GenerateMaze ()
     {
         Node startnode = nodeGrid[0,0];
-        Debug.Log(startnode.worldPosition);
         Cellset.Add(startnode);
         while (Cellset.Count > 0)
         {
@@ -149,6 +151,7 @@ public class MazeGeneration : MonoBehaviour
                 PossibleExits.Add(nodeGrid[1, i]);
             }
         }
+        if (PossibleExits.Count <= 0) SceneManager.LoadScene(0);
         foreach (var item in PossibleExits)
         {
             Queue<Vector3>Path = pf.FindPath(nodeGrid[0, 0].worldPosition, item.worldPosition);
@@ -165,7 +168,6 @@ public class MazeGeneration : MonoBehaviour
             SceneManager.LoadScene(0);
         }
         path.Reverse();
-        Debug.Log(path.Count);
         EndNode = grid.NodeFromWorldPoint(path[0]);
         ClearEnd(EndNode);
     }
