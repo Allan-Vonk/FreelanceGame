@@ -475,7 +475,7 @@ GameObject:
   - component: {fileID: 1324225642}
   - component: {fileID: 1324225643}
   m_Layer: 0
-  m_Name: NightMare
+  m_Name: TheKevin
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -587,6 +587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 2127310236}
   speed: 0.005
+  unit: {fileID: 0}
   lastKnowPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1337346431
 GameObject:

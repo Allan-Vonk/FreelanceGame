@@ -6,7 +6,7 @@ public class NightMareMovement : MonoBehaviour
 {
     public GameObject Target;
     public float speed;
-    private Unit unit;
+    public Unit unit;
     public Vector3 lastKnowPos;
     public bool CanSeeTarget
     {
