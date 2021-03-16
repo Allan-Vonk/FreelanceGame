@@ -35,7 +35,7 @@ public class MazeGeneration : MonoBehaviour
     private void initialize ()
     {
         GenerateMaze();
-        ClearStart();
+        //ClearStart();
         GenerateExit();
         GenerateWalls();
         MergeWalls();
@@ -79,7 +79,7 @@ public class MazeGeneration : MonoBehaviour
     }
     private void GenerateMaze ()
     {
-        Node startnode = nodeGrid[0,0];
+        Node startnode = nodeGrid[1,1];
         Cellset.Add(startnode);
         while (Cellset.Count > 0)
         {
@@ -163,7 +163,7 @@ public class MazeGeneration : MonoBehaviour
         if (PossibleExits.Count <= 0) SceneManager.LoadScene(0);
         foreach (var item in PossibleExits)
         {
-            Queue<Vector3>Path = pf.FindPath(nodeGrid[0, 0].worldPosition, item.worldPosition);
+            Queue<Vector3>Path = pf.FindPath(nodeGrid[1, 1].worldPosition, item.worldPosition);
             if (Path != null)
             {
                 PathList.Add(Path);
