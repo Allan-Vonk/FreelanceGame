@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1798512034970239620, guid: c8aee01b8a967984293198a610cb4cb4, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848427343931558530, guid: c8aee01b8a967984293198a610cb4cb4, type: 3}
       propertyPath: m_Name
@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: 285570896}
   - component: {fileID: 285570895}
   - component: {fileID: 285570894}
+  - component: {fileID: 285570900}
   m_Layer: 0
   m_Name: TheKevin (2)
   m_TagString: Enemy
@@ -345,6 +346,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &285570900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285570893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdd63aba31bfb2e4e85d91bbd937759d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_footstepEventPath: event:/SFX/Nightmare/GhostFootsteps
+  m_GhostSoundsEventPath: event:/SFX/Nightmare/GhostSounds
+  m_GhostWindEventPath: event:/SFX/Nightmare/GhostWind
+  m_JumpscareEventPath: 
+  m_stepDistance: 2
 --- !u!1 &446679756
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,6 +377,7 @@ GameObject:
   - component: {fileID: 446679759}
   - component: {fileID: 446679758}
   - component: {fileID: 446679757}
+  - component: {fileID: 446679763}
   m_Layer: 0
   m_Name: TheKevin (4)
   m_TagString: Enemy
@@ -474,6 +493,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &446679763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446679756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdd63aba31bfb2e4e85d91bbd937759d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_footstepEventPath: event:/SFX/Nightmare/GhostFootsteps
+  m_GhostSoundsEventPath: event:/SFX/Nightmare/GhostSounds
+  m_GhostWindEventPath: event:/SFX/Nightmare/GhostWind
+  m_JumpscareEventPath: 
+  m_stepDistance: 2
 --- !u!1 &459658495
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,6 +524,7 @@ GameObject:
   - component: {fileID: 459658498}
   - component: {fileID: 459658497}
   - component: {fileID: 459658496}
+  - component: {fileID: 459658502}
   m_Layer: 0
   m_Name: TheKevin (8)
   m_TagString: Enemy
@@ -603,6 +640,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &459658502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459658495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdd63aba31bfb2e4e85d91bbd937759d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_footstepEventPath: event:/SFX/Nightmare/GhostFootsteps
+  m_GhostSoundsEventPath: event:/SFX/Nightmare/GhostSounds
+  m_GhostWindEventPath: event:/SFX/Nightmare/GhostWind
+  m_JumpscareEventPath: 
+  m_stepDistance: 2
 --- !u!4 &662362702 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6848427343931558531, guid: c8aee01b8a967984293198a610cb4cb4, type: 3}
@@ -622,6 +676,7 @@ GameObject:
   - component: {fileID: 673892440}
   - component: {fileID: 673892439}
   - component: {fileID: 673892438}
+  - component: {fileID: 673892444}
   m_Layer: 0
   m_Name: TheKevin (6)
   m_TagString: Enemy
@@ -737,6 +792,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &673892444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673892437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdd63aba31bfb2e4e85d91bbd937759d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_footstepEventPath: event:/SFX/Nightmare/GhostFootsteps
+  m_GhostSoundsEventPath: event:/SFX/Nightmare/GhostSounds
+  m_GhostWindEventPath: event:/SFX/Nightmare/GhostWind
+  m_JumpscareEventPath: 
+  m_stepDistance: 2
 --- !u!1 &706523438
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,6 +1062,7 @@ GameObject:
   - component: {fileID: 1324225638}
   - component: {fileID: 1324225642}
   - component: {fileID: 1324225643}
+  - component: {fileID: 1324225644}
   m_Layer: 0
   m_Name: TheKevin
   m_TagString: Enemy
@@ -1105,6 +1178,23 @@ MonoBehaviour:
   speed: 0.005
   unit: {fileID: 0}
   lastKnowPos: {x: 0, y: 0, z: 0}
+--- !u!114 &1324225644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324225637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdd63aba31bfb2e4e85d91bbd937759d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_footstepEventPath: event:/SFX/Nightmare/GhostFootsteps
+  m_GhostSoundsEventPath: event:/SFX/Nightmare/GhostSounds
+  m_GhostWindEventPath: event:/SFX/Nightmare/GhostWind
+  m_JumpscareEventPath: 
+  m_stepDistance: 2
 --- !u!1 &1337346431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,6 +1305,7 @@ GameObject:
   - component: {fileID: 1702260986}
   - component: {fileID: 1702260985}
   - component: {fileID: 1702260984}
+  - component: {fileID: 1702260990}
   m_Layer: 0
   m_Name: TheKevin (10)
   m_TagString: Enemy
@@ -1330,6 +1421,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1702260990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702260983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdd63aba31bfb2e4e85d91bbd937759d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_footstepEventPath: event:/SFX/Nightmare/GhostFootsteps
+  m_GhostSoundsEventPath: event:/SFX/Nightmare/GhostSounds
+  m_GhostWindEventPath: event:/SFX/Nightmare/GhostWind
+  m_JumpscareEventPath: 
+  m_stepDistance: 2
 --- !u!1 &2127310236 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6848427343931558530, guid: c8aee01b8a967984293198a610cb4cb4, type: 3}
