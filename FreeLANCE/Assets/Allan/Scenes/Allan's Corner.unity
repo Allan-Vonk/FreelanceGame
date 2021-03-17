@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 2127310236}
-  speed: 0.005
+  speed: 0.01
   unit: {fileID: 0}
   lastKnowPos: {x: 0, y: 0, z: 0}
 --- !u!114 &285570895
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 2127310236}
-  speed: 0.005
+  speed: 0.01
   unit: {fileID: 0}
   lastKnowPos: {x: 0, y: 0, z: 0}
 --- !u!114 &446679758
@@ -545,7 +545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 2127310236}
-  speed: 0.005
+  speed: 0.01
   unit: {fileID: 0}
   lastKnowPos: {x: 0, y: 0, z: 0}
 --- !u!114 &459658497
@@ -697,7 +697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 2127310236}
-  speed: 0.005
+  speed: 0.01
   unit: {fileID: 0}
   lastKnowPos: {x: 0, y: 0, z: 0}
 --- !u!114 &673892439
@@ -933,7 +933,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -998,7 +998,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2.26
+  m_Intensity: 1.93
   m_Range: 105.42
   m_SpotAngle: 98
   m_InnerSpotAngle: 21.80208
@@ -1175,7 +1175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 2127310236}
-  speed: 0.005
+  speed: 0.01
   unit: {fileID: 0}
   lastKnowPos: {x: 0, y: 0, z: 0}
 --- !u!114 &1324225644
@@ -1326,7 +1326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 2127310236}
-  speed: 0.005
+  speed: 0.01
   unit: {fileID: 0}
   lastKnowPos: {x: 0, y: 0, z: 0}
 --- !u!114 &1702260985
