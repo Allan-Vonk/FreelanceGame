@@ -89,8 +89,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 2
+  MaxDistance: 30
   Length: 3555
 --- !u!114 &-3161677529762580514
 MonoBehaviour:
@@ -130,7 +130,7 @@ MonoBehaviour:
   Path: Assets/Ryan/FMod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637509837522319147
+  lastModified: 637514916269097845
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -187,7 +187,7 @@ MonoBehaviour:
   - {fileID: 8298410221970957135}
   StringsBanks:
   - {fileID: -2962446308250173367}
-  stringsBankWriteTime: 637509837522319147
+  stringsBankWriteTime: 637514916269097845
   cacheVersion: 6
 --- !u!114 &997119609466335826
 MonoBehaviour:
@@ -334,7 +334,7 @@ MonoBehaviour:
   Path: Assets/Ryan/FMod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637509837522299102
+  lastModified: 637514916269057932
   LoadResult: 0
   FileSizes: []
   Exists: 1
