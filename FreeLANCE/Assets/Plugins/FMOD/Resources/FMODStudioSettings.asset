@@ -456,8 +456,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets/Ryan/FMod/At the end.fspro
-  sourceBankPath: Assets\Ryan\FMod\Build
+  sourceProjectPath: Assets/FMod/At the end.fspro
+  sourceBankPath: Assets\FMod\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
