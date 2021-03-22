@@ -360,9 +360,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_footstepEventPath: event:/SFX/Nightmare/GhostFootsteps
   m_GhostSoundsEventPath: event:/SFX/Nightmare/GhostSounds
-  m_GhostWindEventPath: event:/SFX/Nightmare/GhostWind
-  m_JumpscareEventPath: 
+  m_JumpscareEventPath: event:/SFX/Nightmare/GhostWind
+  m_player: {fileID: 2127310236}
   m_stepDistance: 2
+  m_soundTriggerDistance: 20
 --- !u!1 &446679756
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,9 +508,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_footstepEventPath: event:/SFX/Nightmare/GhostFootsteps
   m_GhostSoundsEventPath: event:/SFX/Nightmare/GhostSounds
-  m_GhostWindEventPath: event:/SFX/Nightmare/GhostWind
-  m_JumpscareEventPath: 
+  m_JumpscareEventPath: event:/SFX/Nightmare/GhostWind
+  m_player: {fileID: 2127310236}
   m_stepDistance: 2
+  m_soundTriggerDistance: 20
 --- !u!1 &459658495
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,9 +656,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_footstepEventPath: event:/SFX/Nightmare/GhostFootsteps
   m_GhostSoundsEventPath: event:/SFX/Nightmare/GhostSounds
-  m_GhostWindEventPath: event:/SFX/Nightmare/GhostWind
-  m_JumpscareEventPath: 
+  m_JumpscareEventPath: event:/SFX/Nightmare/GhostWind
+  m_player: {fileID: 2127310236}
   m_stepDistance: 2
+  m_soundTriggerDistance: 20
 --- !u!4 &662362702 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6848427343931558531, guid: c8aee01b8a967984293198a610cb4cb4, type: 3}
@@ -806,9 +809,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_footstepEventPath: event:/SFX/Nightmare/GhostFootsteps
   m_GhostSoundsEventPath: event:/SFX/Nightmare/GhostSounds
-  m_GhostWindEventPath: event:/SFX/Nightmare/GhostWind
-  m_JumpscareEventPath: 
+  m_JumpscareEventPath: event:/SFX/Nightmare/GhostWind
+  m_player: {fileID: 2127310236}
   m_stepDistance: 2
+  m_soundTriggerDistance: 20
 --- !u!1 &706523438
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,9 +1209,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_footstepEventPath: event:/SFX/Nightmare/GhostFootsteps
   m_GhostSoundsEventPath: event:/SFX/Nightmare/GhostSounds
-  m_GhostWindEventPath: event:/SFX/Nightmare/GhostWind
-  m_JumpscareEventPath: 
+  m_JumpscareEventPath: event:/SFX/Nightmare/GhostWind
+  m_player: {fileID: 2127310236}
   m_stepDistance: 2
+  m_soundTriggerDistance: 20
 --- !u!1 &1337346431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1448,9 +1453,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_footstepEventPath: event:/SFX/Nightmare/GhostFootsteps
   m_GhostSoundsEventPath: event:/SFX/Nightmare/GhostSounds
-  m_GhostWindEventPath: event:/SFX/Nightmare/GhostWind
-  m_JumpscareEventPath: 
+  m_JumpscareEventPath: event:/SFX/Nightmare/GhostWind
+  m_player: {fileID: 2127310236}
   m_stepDistance: 2
+  m_soundTriggerDistance: 20
 --- !u!1 &2127310236 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6848427343931558530, guid: c8aee01b8a967984293198a610cb4cb4, type: 3}
@@ -1468,3 +1474,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c36c80466f9a3f4e98ae0dd5f5dc5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2127310243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127310236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48beb2669075f804397305d636edd758, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_crowsEventPath: event:/SFX/Environment/Crows
+  m_crowsFlyEventPath: event:/SFX/Environment/CrowsFlying
+  m_FoliageEventPath: event:/SFX/Environment/Foliage
+  m_windEventPath: event:/SFX/Environment/Wind
+  m_player: {fileID: 2127310236}

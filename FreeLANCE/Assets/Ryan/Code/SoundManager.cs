@@ -18,9 +18,22 @@ public class SoundManager : MonoBehaviour
     private float m_foliageTimer;
     private float m_windTimer;
 
+    private void Start()
+    {
+        m_crowTimer = 10f;
+        m_crowFlyTimer = 11f;
+        m_foliageTimer = 3f;
+        m_windTimer = 1f;
+    }
+
     private void Update()
     {
-        
+        //m_foliageTimer -= Time.deltaTime;
+        //if (m_foliageTimer <= 0)
+        //{
+        //    PlaySound(m_FoliageEventPath, m_player.transform);
+        //    m_foliageTimer = Random.Range(6f, 20f);
+        //}
     }
 
     private void PlaySound(string eventPath, Transform eventLocation)
