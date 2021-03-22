@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< Updated upstream
 --- !u!114 &-8629713302254562785
+=======
+--- !u!114 &-9057599644432076937
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,6 +14,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/SFX/Player/Footsteps
   m_EditorClassIdentifier: 
   Path: event:/SFX/Player/Footsteps
@@ -23,6 +28,67 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1345
+=======
+  m_Name: event:/SFX/Nightmare/GhostWind
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Nightmare/GhostWind
+  guid: 4fc57a43f3f49840bfb1e7bbbf50ff31
+  Banks:
+  - {fileID: -3364028249955648507}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 31683
+--- !u!114 &-8374033747610600586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Nightmare/GhostSounds
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Nightmare/GhostSounds
+  guid: 5bd9dd86fe67e54eba223b8985169103
+  Banks:
+  - {fileID: -3364028249955648507}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5985
+--- !u!114 &-7980607059095304272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Nightmare/GhostFootsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Nightmare/GhostFootsteps
+  guid: 7360339e54ca514d936cffc63a117897
+  Banks:
+  - {fileID: -3364028249955648507}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 2
+  MaxDistance: 30
+  Length: 3555
+>>>>>>> Stashed changes
 --- !u!114 &-6689665248594398061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,7 +135,11 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1678
+<<<<<<< Updated upstream
 --- !u!114 &-4321681866380755942
+=======
+--- !u!114 &-4871185090086409126
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -79,6 +149,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/SFX/Player/SprintBreath
   m_EditorClassIdentifier: 
   Path: event:/SFX/Player/SprintBreath
@@ -92,6 +163,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1125
+=======
+  m_Name: event:/SFX/Environment/Foliage
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Environment/Foliage
+  guid: dcb6c863baa4bc4d9577ab85ab5caa52
+  Banks:
+  - {fileID: -3364028249955648507}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5271
+>>>>>>> Stashed changes
 --- !u!114 &-4138762424980599702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,6 +201,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3423
+--- !u!114 &-3877705433566619633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Environment/CrowsFlying
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Environment/CrowsFlying
+  guid: 11bb14bd37885f409cc03b86ff8b4b17
+  Banks:
+  - {fileID: -3364028249955648507}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1678
 --- !u!114 &-3442122615412849301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,7 +247,11 @@ MonoBehaviour:
   MinDistance: 2
   MaxDistance: 30
   Length: 3555
+<<<<<<< Updated upstream
 --- !u!114 &-3288271243742867294
+=======
+--- !u!114 &-3364028249955648507
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,6 +260,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/SFX/Nightmare/GhostFootsteps
   m_EditorClassIdentifier: 
@@ -161,6 +275,18 @@ MonoBehaviour:
   MinDistance: 2
   MaxDistance: 30
   Length: 3555
+=======
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMod/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637514916269057932
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+>>>>>>> Stashed changes
 --- !u!114 &-3161677529762580514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,6 +409,7 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
+<<<<<<< Updated upstream
   - {fileID: 1601732690087413469}
   - {fileID: 3093529923225283124}
   EditorEvents:
@@ -302,8 +429,52 @@ MonoBehaviour:
   - {fileID: 3093529923225283124}
   StringsBanks:
   - {fileID: 1601732690087413469}
+=======
+  - {fileID: 8208072546731354284}
+  - {fileID: -3364028249955648507}
+  EditorEvents:
+  - {fileID: 194934190240358201}
+  - {fileID: -3877705433566619633}
+  - {fileID: 3085203518804209700}
+  - {fileID: -9057599644432076937}
+  - {fileID: 5753277377712643102}
+  - {fileID: -8374033747610600586}
+  - {fileID: -7980607059095304272}
+  - {fileID: 3541394483702230966}
+  - {fileID: 5788469753617491089}
+  - {fileID: -4871185090086409126}
+  - {fileID: 8561448285795653786}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -3364028249955648507}
+  StringsBanks:
+  - {fileID: 8208072546731354284}
+>>>>>>> Stashed changes
   stringsBankWriteTime: 637514916269097845
   cacheVersion: 6
+--- !u!114 &194934190240358201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/SprintBreath
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/SprintBreath
+  guid: 09af527f8eeec844bb037bc16bbec94b
+  Banks:
+  - {fileID: -3364028249955648507}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1125
 --- !u!114 &997119609466335826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,7 +626,11 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1125
+<<<<<<< Updated upstream
 --- !u!114 &3093529923225283124
+=======
+--- !u!114 &3085203518804209700
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -464,6 +639,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
@@ -475,6 +651,23 @@ MonoBehaviour:
   FileSizes: []
   Exists: 1
 --- !u!114 &4967220996358110887
+=======
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/BreadCrumbs
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/BreadCrumbs
+  guid: 148bca665e62db48b71cf66255c13bb6
+  Banks:
+  - {fileID: -3364028249955648507}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3423
+--- !u!114 &3541394483702230966
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -484,6 +677,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/SFX/Nightmare/GhostWind
   m_EditorClassIdentifier: 
   Path: event:/SFX/Nightmare/GhostWind
@@ -498,6 +692,22 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 31683
 --- !u!114 &5389337933408258500
+=======
+  m_Name: event:/SFX/Player/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/Footsteps
+  guid: c380d119c8bbcd4ebbc87b733a6cd329
+  Banks:
+  - {fileID: -3364028249955648507}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1345
+--- !u!114 &5753277377712643102
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -507,20 +717,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/SFX/Environment/Foliage
   m_EditorClassIdentifier: 
   Path: event:/SFX/Environment/Foliage
   guid: dcb6c863baa4bc4d9577ab85ab5caa52
   Banks:
   - {fileID: 3093529923225283124}
+=======
+  m_Name: event:/SFX/Environment/Crows
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Environment/Crows
+  guid: 51d7b71641b7e74e964a6e4fd34ea5ec
+  Banks:
+  - {fileID: -3364028249955648507}
+>>>>>>> Stashed changes
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< Updated upstream
   Length: 5271
 --- !u!114 &5770077966612972995
+=======
+  Length: 2565
+--- !u!114 &5788469753617491089
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -530,6 +754,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/SFX/Environment/CrowsFlying
   m_EditorClassIdentifier: 
   Path: event:/SFX/Environment/CrowsFlying
@@ -543,6 +768,21 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1678
+=======
+  m_Name: event:/SFX/Player/ItemCollection
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/ItemCollection
+  guid: c776beafa336a745b23b7530495d174b
+  Banks:
+  - {fileID: -3364028249955648507}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1400
+>>>>>>> Stashed changes
 --- !u!114 &7086721940560337213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -566,7 +806,11 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1345
+<<<<<<< Updated upstream
 --- !u!114 &7477455340516155421
+=======
+--- !u!114 &8208072546731354284
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -575,6 +819,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/SFX/Player/ItemCollection
   m_EditorClassIdentifier: 
@@ -589,6 +834,20 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1400
+=======
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMod/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637514916269097845
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1184
+  Exists: 1
+>>>>>>> Stashed changes
 --- !u!114 &8298410221970957135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,7 +867,11 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+<<<<<<< Updated upstream
 --- !u!114 &8310823952945688492
+=======
+--- !u!114 &8561448285795653786
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -618,6 +881,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/SFX/Environment/Crows
   m_EditorClassIdentifier: 
   Path: event:/SFX/Environment/Crows
@@ -625,12 +889,25 @@ MonoBehaviour:
   Banks:
   - {fileID: 3093529923225283124}
   IsStream: 0
+=======
+  m_Name: event:/SFX/Environment/Wind
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Environment/Wind
+  guid: f9313a26057a7148b84ba99f64c0a674
+  Banks:
+  - {fileID: -3364028249955648507}
+  IsStream: 1
+>>>>>>> Stashed changes
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< Updated upstream
   Length: 2565
+=======
+  Length: 14595
+>>>>>>> Stashed changes
 --- !u!114 &8664176229868268773
 MonoBehaviour:
   m_ObjectHideFlags: 0
