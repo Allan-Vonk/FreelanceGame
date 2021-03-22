@@ -1,354 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8629713302254562785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/Footsteps
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/Footsteps
-  guid: c380d119c8bbcd4ebbc87b733a6cd329
-  Banks:
-  - {fileID: 3093529923225283124}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1345
---- !u!114 &-6689665248594398061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Nightmare/GhostWind
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Nightmare/GhostWind
-  guid: 4fc57a43f3f49840bfb1e7bbbf50ff31
-  Banks:
-  - {fileID: 8298410221970957135}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 31683
---- !u!114 &-5666601084484125660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Environment/CrowsFlying
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Environment/CrowsFlying
-  guid: 11bb14bd37885f409cc03b86ff8b4b17
-  Banks:
-  - {fileID: 8298410221970957135}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1678
---- !u!114 &-4321681866380755942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/SprintBreath
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/SprintBreath
-  guid: 09af527f8eeec844bb037bc16bbec94b
-  Banks:
-  - {fileID: 3093529923225283124}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1125
---- !u!114 &-4138762424980599702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/BreadCrumbs
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/BreadCrumbs
-  guid: 148bca665e62db48b71cf66255c13bb6
-  Banks:
-  - {fileID: 8298410221970957135}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 3423
---- !u!114 &-3442122615412849301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Nightmare/GhostFootsteps
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Nightmare/GhostFootsteps
-  guid: 7360339e54ca514d936cffc63a117897
-  Banks:
-  - {fileID: 8298410221970957135}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 2
-  MaxDistance: 30
-  Length: 3555
---- !u!114 &-3288271243742867294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Nightmare/GhostFootsteps
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Nightmare/GhostFootsteps
-  guid: 7360339e54ca514d936cffc63a117897
-  Banks:
-  - {fileID: 3093529923225283124}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 2
-  MaxDistance: 30
-  Length: 3555
---- !u!114 &-3161677529762580514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/ItemCollection
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/ItemCollection
-  guid: c776beafa336a745b23b7530495d174b
-  Banks:
-  - {fileID: 8298410221970957135}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1400
---- !u!114 &-2962446308250173367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Ryan/FMod/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637514916269097845
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 1184
-  Exists: 1
---- !u!114 &-2842495560409302368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/BreadCrumbs
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/BreadCrumbs
-  guid: 148bca665e62db48b71cf66255c13bb6
-  Banks:
-  - {fileID: 3093529923225283124}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 3423
---- !u!114 &-1970591645718758151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Environment/Wind
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Environment/Wind
-  guid: f9313a26057a7148b84ba99f64c0a674
-  Banks:
-  - {fileID: 3093529923225283124}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 14595
---- !u!114 &-477085613135710058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../../../../../Documents/Fmod/At the end/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637503666947251644
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 1601732690087413469}
-  - {fileID: 3093529923225283124}
-  EditorEvents:
-  - {fileID: -4321681866380755942}
-  - {fileID: 5770077966612972995}
-  - {fileID: -2842495560409302368}
-  - {fileID: 4967220996358110887}
-  - {fileID: 8310823952945688492}
-  - {fileID: 1494791332934140410}
-  - {fileID: -3288271243742867294}
-  - {fileID: -8629713302254562785}
-  - {fileID: 7477455340516155421}
-  - {fileID: 5389337933408258500}
-  - {fileID: -1970591645718758151}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: 3093529923225283124}
-  StringsBanks:
-  - {fileID: 1601732690087413469}
-  stringsBankWriteTime: 637514916269097845
-  cacheVersion: 6
---- !u!114 &997119609466335826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Environment/Foliage
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Environment/Foliage
-  guid: dcb6c863baa4bc4d9577ab85ab5caa52
-  Banks:
-  - {fileID: 8298410221970957135}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5271
---- !u!114 &1390703157669274453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../../../../../Documents/Fmod/At the end/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637503666947301519
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 700
-  Exists: 1
---- !u!114 &1494791332934140410
+--- !u!114 &-9045539833191634445
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -363,7 +15,7 @@ MonoBehaviour:
   Path: event:/SFX/Nightmare/GhostSounds
   guid: 5bd9dd86fe67e54eba223b8985169103
   Banks:
-  - {fileID: 3093529923225283124}
+  - {fileID: 1429071705545667140}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -371,7 +23,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5985
---- !u!114 &1601732690087413469
+--- !u!114 &-8441817017358863875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/BreadCrumbs
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/BreadCrumbs
+  guid: 148bca665e62db48b71cf66255c13bb6
+  Banks:
+  - {fileID: 5682729443194061501}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3423
+--- !u!114 &-8429556054778340865
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -392,47 +67,7 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1184
   Exists: 1
---- !u!114 &1931658188058385284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../../../../../Documents/Fmod/At the end/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637503666947251644
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &2592334690545539361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../../../../../Documents/Fmod/At the end/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637503666947301519
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 700
-  Exists: 1
---- !u!114 &2896702205312442550
+--- !u!114 &-8385422340578269523
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -442,20 +77,112 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/SprintBreath
+  m_Name: event:/SFX/Environment/CrowsFlying
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/SprintBreath
-  guid: 09af527f8eeec844bb037bc16bbec94b
+  Path: event:/SFX/Environment/CrowsFlying
+  guid: 11bb14bd37885f409cc03b86ff8b4b17
   Banks:
-  - {fileID: 8298410221970957135}
+  - {fileID: 5682729443194061501}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1678
+--- !u!114 &-7107791419134337126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Environment/Foliage
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Environment/Foliage
+  guid: dcb6c863baa4bc4d9577ab85ab5caa52
+  Banks:
+  - {fileID: -3988309975978881972}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5271
+--- !u!114 &-5378489336833061752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Nightmare/GhostWind
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Nightmare/GhostWind
+  guid: 4fc57a43f3f49840bfb1e7bbbf50ff31
+  Banks:
+  - {fileID: 1429071705545667140}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 31683
+--- !u!114 &-4445235052698462602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Environment/Wind
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Environment/Wind
+  guid: f9313a26057a7148b84ba99f64c0a674
+  Banks:
+  - {fileID: 5682729443194061501}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 14595
+--- !u!114 &-4041121761268410903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/BreadCrumbs
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/BreadCrumbs
+  guid: 148bca665e62db48b71cf66255c13bb6
+  Banks:
+  - {fileID: 1429071705545667140}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1125
---- !u!114 &3093529923225283124
+  Length: 3423
+--- !u!114 &-3988309975978881972
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -474,53 +201,7 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
---- !u!114 &4967220996358110887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Nightmare/GhostWind
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Nightmare/GhostWind
-  guid: 4fc57a43f3f49840bfb1e7bbbf50ff31
-  Banks:
-  - {fileID: 3093529923225283124}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 31683
---- !u!114 &5389337933408258500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Environment/Foliage
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Environment/Foliage
-  guid: dcb6c863baa4bc4d9577ab85ab5caa52
-  Banks:
-  - {fileID: 3093529923225283124}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5271
---- !u!114 &5770077966612972995
+--- !u!114 &-2966191125109256387
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -535,7 +216,7 @@ MonoBehaviour:
   Path: event:/SFX/Environment/CrowsFlying
   guid: 11bb14bd37885f409cc03b86ff8b4b17
   Banks:
-  - {fileID: 3093529923225283124}
+  - {fileID: 1429071705545667140}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -543,30 +224,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1678
---- !u!114 &7086721940560337213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/Footsteps
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/Footsteps
-  guid: c380d119c8bbcd4ebbc87b733a6cd329
-  Banks:
-  - {fileID: 8298410221970957135}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1345
---- !u!114 &7477455340516155421
+--- !u!114 &-2228150090108968763
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -581,7 +239,7 @@ MonoBehaviour:
   Path: event:/SFX/Player/ItemCollection
   guid: c776beafa336a745b23b7530495d174b
   Banks:
-  - {fileID: 3093529923225283124}
+  - {fileID: 1429071705545667140}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -589,49 +247,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1400
---- !u!114 &8298410221970957135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Ryan/FMod/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637514916269057932
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &8310823952945688492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Environment/Crows
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Environment/Crows
-  guid: 51d7b71641b7e74e964a6e4fd34ea5ec
-  Banks:
-  - {fileID: 3093529923225283124}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2565
---- !u!114 &8664176229868268773
+--- !u!114 &-1710466688116727482
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -646,7 +262,7 @@ MonoBehaviour:
   Path: event:/SFX/Environment/Wind
   guid: f9313a26057a7148b84ba99f64c0a674
   Banks:
-  - {fileID: 8298410221970957135}
+  - {fileID: -3988309975978881972}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -654,7 +270,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 14595
---- !u!114 &8707604492579917557
+--- !u!114 &-1513968758071705536
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -664,20 +280,190 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Nightmare/GhostSounds
+  m_Name: event:/SFX/Player/BreadCrumbs
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Nightmare/GhostSounds
-  guid: 5bd9dd86fe67e54eba223b8985169103
+  Path: event:/SFX/Player/BreadCrumbs
+  guid: 148bca665e62db48b71cf66255c13bb6
   Banks:
-  - {fileID: 8298410221970957135}
+  - {fileID: -3988309975978881972}
   IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3423
+--- !u!114 &-1053852068805364804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/SprintBreath
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/SprintBreath
+  guid: 09af527f8eeec844bb037bc16bbec94b
+  Banks:
+  - {fileID: -3988309975978881972}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1125
+--- !u!114 &-896710558729017066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Environment/Wind
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Environment/Wind
+  guid: f9313a26057a7148b84ba99f64c0a674
+  Banks:
+  - {fileID: 1429071705545667140}
+  IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 5985
---- !u!114 &9039500741506245367
+  Length: 14595
+--- !u!114 &-747254814447425730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/ItemCollection
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/ItemCollection
+  guid: c776beafa336a745b23b7530495d174b
+  Banks:
+  - {fileID: 5682729443194061501}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1400
+--- !u!114 &-740859374721951335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/ItemCollection
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/ItemCollection
+  guid: c776beafa336a745b23b7530495d174b
+  Banks:
+  - {fileID: -3988309975978881972}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1400
+--- !u!114 &-515977540158749804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Nightmare/GhostFootsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Nightmare/GhostFootsteps
+  guid: 7360339e54ca514d936cffc63a117897
+  Banks:
+  - {fileID: -3988309975978881972}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 2
+  MaxDistance: 30
+  Length: 3555
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 80535161873523133}
+  - {fileID: 1429071705545667140}
+  EditorEvents:
+  - {fileID: 7490945027541155128}
+  - {fileID: -2966191125109256387}
+  - {fileID: -4041121761268410903}
+  - {fileID: -5378489336833061752}
+  - {fileID: 6957780126466402675}
+  - {fileID: -9045539833191634445}
+  - {fileID: 9020296979242521054}
+  - {fileID: 6532773762746073174}
+  - {fileID: -2228150090108968763}
+  - {fileID: 3961341044360815094}
+  - {fileID: -896710558729017066}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 1429071705545667140}
+  StringsBanks:
+  - {fileID: 80535161873523133}
+  stringsBankWriteTime: 637514916269097845
+  cacheVersion: 6
+--- !u!114 &80535161873523133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMod/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637514916269097845
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1184
+  Exists: 1
+--- !u!114 &1210323950847372022
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -692,7 +478,7 @@ MonoBehaviour:
   Path: event:/SFX/Environment/Crows
   guid: 51d7b71641b7e74e964a6e4fd34ea5ec
   Banks:
-  - {fileID: 8298410221970957135}
+  - {fileID: -3988309975978881972}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -700,3 +486,430 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2565
+--- !u!114 &1429071705545667140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMod/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637514916269057932
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &3961341044360815094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Environment/Foliage
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Environment/Foliage
+  guid: dcb6c863baa4bc4d9577ab85ab5caa52
+  Banks:
+  - {fileID: 1429071705545667140}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5271
+--- !u!114 &4279003279455170857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Environment/Foliage
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Environment/Foliage
+  guid: dcb6c863baa4bc4d9577ab85ab5caa52
+  Banks:
+  - {fileID: 5682729443194061501}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5271
+--- !u!114 &4325272201686529378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Environment/Crows
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Environment/Crows
+  guid: 51d7b71641b7e74e964a6e4fd34ea5ec
+  Banks:
+  - {fileID: 5682729443194061501}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2565
+--- !u!114 &4395316035855438805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Environment/CrowsFlying
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Environment/CrowsFlying
+  guid: 11bb14bd37885f409cc03b86ff8b4b17
+  Banks:
+  - {fileID: -3988309975978881972}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1678
+--- !u!114 &4920407343473103409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Nightmare/GhostWind
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Nightmare/GhostWind
+  guid: 4fc57a43f3f49840bfb1e7bbbf50ff31
+  Banks:
+  - {fileID: -3988309975978881972}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 31683
+--- !u!114 &4954947477987747042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Nightmare/GhostWind
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Nightmare/GhostWind
+  guid: 4fc57a43f3f49840bfb1e7bbbf50ff31
+  Banks:
+  - {fileID: 5682729443194061501}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 31683
+--- !u!114 &5593678393184170865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/Footsteps
+  guid: c380d119c8bbcd4ebbc87b733a6cd329
+  Banks:
+  - {fileID: 5682729443194061501}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1345
+--- !u!114 &5600827705011878454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMod/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637514916269097845
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1184
+  Exists: 1
+--- !u!114 &5682729443194061501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMod/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637514916269057932
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &6532773762746073174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/Footsteps
+  guid: c380d119c8bbcd4ebbc87b733a6cd329
+  Banks:
+  - {fileID: 1429071705545667140}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1345
+--- !u!114 &6579296156973762547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/Footsteps
+  guid: c380d119c8bbcd4ebbc87b733a6cd329
+  Banks:
+  - {fileID: -3988309975978881972}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1345
+--- !u!114 &6957780126466402675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Environment/Crows
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Environment/Crows
+  guid: 51d7b71641b7e74e964a6e4fd34ea5ec
+  Banks:
+  - {fileID: 1429071705545667140}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2565
+--- !u!114 &7480223978131360321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Nightmare/GhostSounds
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Nightmare/GhostSounds
+  guid: 5bd9dd86fe67e54eba223b8985169103
+  Banks:
+  - {fileID: 5682729443194061501}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5985
+--- !u!114 &7490945027541155128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/SprintBreath
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/SprintBreath
+  guid: 09af527f8eeec844bb037bc16bbec94b
+  Banks:
+  - {fileID: 1429071705545667140}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1125
+--- !u!114 &7551325817604723437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/SprintBreath
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/SprintBreath
+  guid: 09af527f8eeec844bb037bc16bbec94b
+  Banks:
+  - {fileID: 5682729443194061501}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1125
+--- !u!114 &7998057074682089824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Nightmare/GhostFootsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Nightmare/GhostFootsteps
+  guid: 7360339e54ca514d936cffc63a117897
+  Banks:
+  - {fileID: 5682729443194061501}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 2
+  MaxDistance: 30
+  Length: 3555
+--- !u!114 &9020296979242521054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Nightmare/GhostFootsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Nightmare/GhostFootsteps
+  guid: 7360339e54ca514d936cffc63a117897
+  Banks:
+  - {fileID: 1429071705545667140}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 2
+  MaxDistance: 30
+  Length: 3555
+--- !u!114 &9030197971369791967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Nightmare/GhostSounds
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Nightmare/GhostSounds
+  guid: 5bd9dd86fe67e54eba223b8985169103
+  Banks:
+  - {fileID: -3988309975978881972}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5985
