@@ -9,6 +9,7 @@ public class MazeGeneration : MonoBehaviour
     Grid grid;
     Node[,] nodeGrid;
     public GameObject wallPrefab;
+    public GameObject doorPrefab;
     private List<Node>Cellset;
     Node EndNode;
     Pathfinding pf;
@@ -124,43 +125,35 @@ public class MazeGeneration : MonoBehaviour
         //X
         for (int i = 0; i < grid.gridSizeX; i++)
         {
-            Debug.Log("1");
             if (nodeGrid[i, 1].walkable)
             {
-                Debug.Log("2");
                 PossibleExits.Add(nodeGrid[i, grid.gridSizeY-2]);
             }
         }
         for (int i = 0; i < grid.gridSizeX; i++)
         {
-            Debug.Log("3");
             if (nodeGrid[i, grid.gridSizeY - 2].walkable)
             {
-                Debug.Log("4");
                 PossibleExits.Add(nodeGrid[i, 1]);
             }
         }
         //Y
         for (int i = 0; i < grid.gridSizeY; i++)
         {
-            Debug.Log("5");
             if (nodeGrid[1, i].walkable)
             {
-                Debug.Log("6");
                 PossibleExits.Add(nodeGrid[grid.gridSizeX-2, i]);
             }
         }
         for (int i = 0; i < grid.gridSizeY; i++)
         {
-            //Debug.Log("155: "+ i + " "+nodeGrid[grid.gridSizeX - 1, i].walkable);
-            Debug.Log(nodeGrid.GetLength(0) + " " + nodeGrid.GetLength(1) + " " + (grid.gridSizeX - 1) + " " + i);
             if (nodeGrid[grid.gridSizeX - 2, i].walkable)
             {
-                Debug.Log("Function: "+i);
                 PossibleExits.Add(nodeGrid[1, i]);
             }
         }
         if (PossibleExits.Count <= 0) SceneManager.LoadScene(0);
+
         foreach (var item in PossibleExits)
         {
             Queue<Vector3>Path = pf.FindPath(nodeGrid[1, 1].worldPosition, item.worldPosition);
@@ -178,7 +171,14 @@ public class MazeGeneration : MonoBehaviour
         }
         path.Reverse();
         EndNode = grid.NodeFromWorldPoint(path[0]);
-        Debug.Log("End");
         ClearEnd(EndNode);
+        foreach (Node node in grid.edgeNodes)
+        {
+            if (node.walkable == true)
+            {
+                GameObject wall = Instantiate(doorPrefab);
+                wall.transform.position = node.worldPosition + new Vector3(0, 2, 0);
+            }
+        }
     }
 }

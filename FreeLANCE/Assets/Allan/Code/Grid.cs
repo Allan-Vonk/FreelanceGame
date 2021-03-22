@@ -10,12 +10,14 @@ public class Grid : MonoBehaviour
 	public Vector2 gridWorldSize;
 	public float nodeRadius;
 	public Node[,] grid;
+	public List<Node>edgeNodes;
 
 	float nodeDiameter;
 	public int gridSizeX, gridSizeY;
 
 	void Start ()
 	{
+		edgeNodes = new List<Node>();
 		nodeDiameter = nodeRadius * 2;
 		gridSizeX = Mathf.RoundToInt(gridWorldSize.x / nodeDiameter);
 		gridSizeY = Mathf.RoundToInt(gridWorldSize.y / nodeDiameter);
@@ -42,6 +44,11 @@ public class Grid : MonoBehaviour
 				Vector3 worldPoint = worldBottomLeft + Vector3.right * (x * nodeDiameter + nodeRadius) + Vector3.forward * (y * nodeDiameter + nodeRadius);
 				bool walkable = !(Physics.CheckSphere(worldPoint,nodeRadius,unwalkableMask));
 				grid[x, y] = new Node(false, worldPoint, x, y);
+				// Ehhh edges :(
+                if (x == 0 || x == gridSizeX - 1 || y == 0 || y == gridSizeY-1)
+                {
+					edgeNodes.Add(grid[x, y]);
+                }
 			}
 		}
 	}
@@ -128,6 +135,7 @@ public class Grid : MonoBehaviour
 				foreach (Node n in grid)
 				{
 					Gizmos.color = (n.walkable) ? Color.white : Color.red;
+					if (n.Edge) Gizmos.color = Color.blue;
 					if (path != null)
 						if (path.Contains(n))
 							Gizmos.color = Color.black;

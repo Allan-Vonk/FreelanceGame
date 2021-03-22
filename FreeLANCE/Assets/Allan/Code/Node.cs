@@ -12,6 +12,7 @@ public class Node : IHeapItem<Node>
 	public bool visited;
 	public bool connected;
 
+	public bool Edge = false;
 	public int gCost;
 	public int hCost;
 	public Node parent;
