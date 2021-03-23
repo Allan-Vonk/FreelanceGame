@@ -974,7 +974,8 @@ PrefabInstance:
       propertyPath: highScoreText
       value: 
       objectReference: {fileID: 1351084537}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7321209621470179291, guid: 8cce34ab30e79984db92d550deda9b68, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8cce34ab30e79984db92d550deda9b68, type: 3}
 --- !u!1001 &1617366133
 PrefabInstance:
