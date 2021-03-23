@@ -15,8 +15,11 @@ public class NightMareMovement : MonoBehaviour
         {   
             if (canSeeTarget == true && value == false)
             {
-                lastKnowPos = Target.transform.position;
-                unit.Target = lastKnowPos;
+                if (Target.GetComponentInChildren<Camera>().gameObject.GetComponentInChildren<Light>().enabled)
+                {
+                    lastKnowPos = Target.transform.position;
+                    unit.Target = lastKnowPos;
+                }
             }
             canSeeTarget = value;
         }
