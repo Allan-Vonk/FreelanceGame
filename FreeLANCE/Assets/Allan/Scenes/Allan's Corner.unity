@@ -985,6 +985,56 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7321209621470179291, guid: 8cce34ab30e79984db92d550deda9b68, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8cce34ab30e79984db92d550deda9b68, type: 3}
+--- !u!1 &1600608248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1600608250}
+  - component: {fileID: 1600608249}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1600608249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600608248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48beb2669075f804397305d636edd758, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_crowsEventPath: event:/SFX/Environment/Crows
+  m_crowsFlyEventPath: event:/SFX/Environment/CrowsFlying
+  m_FoliageEventPath: event:/SFX/Environment/Foliage
+  m_windEventPath: event:/SFX/Environment/Wind
+  m_collectItemEventPath: event:/SFX/Player/ItemCollection
+  m_dropBreadcrumbsEventPath: event:/SFX/Player/BreadCrumbs
+  m_player: {fileID: 2127310236}
+--- !u!4 &1600608250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600608248}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.74794, y: 6.6114273, z: 46.70719}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1617366133
 PrefabInstance:
   m_ObjectHideFlags: 0
