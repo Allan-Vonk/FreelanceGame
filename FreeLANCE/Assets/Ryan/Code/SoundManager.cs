@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
+    public static SoundManager instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     [Header("FMod Settings")]
     [SerializeField] [FMODUnity.EventRef] private string m_crowsEventPath;
     [SerializeField] [FMODUnity.EventRef] private string m_crowsFlyEventPath;
     [SerializeField] [FMODUnity.EventRef] private string m_FoliageEventPath;
     [SerializeField] [FMODUnity.EventRef] private string m_windEventPath;
+    [SerializeField] [FMODUnity.EventRef] private string m_collectItemEventPath;
+    [SerializeField] [FMODUnity.EventRef] private string m_dropBreadcrumbsEventPath;
 
     [Header("Playback Settings")]
     [SerializeField] private GameObject m_player;
@@ -42,5 +51,21 @@ public class SoundManager : MonoBehaviour
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(_sound, eventLocation, GetComponent<Rigidbody>());
         _sound.start();
         _sound.release();
+    }
+
+    public void PlayCollectItem()
+    {
+        FMOD.Studio.EventInstance _collectItem = FMODUnity.RuntimeManager.CreateInstance(m_collectItemEventPath);
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(_collectItem, transform, GetComponent<Rigidbody>());
+        _collectItem.start();
+        _collectItem.release();
+    }
+
+    public void PlayDropBreadcrumbs()
+    {
+        FMOD.Studio.EventInstance _dropBreadcrumbs = FMODUnity.RuntimeManager.CreateInstance(m_dropBreadcrumbsEventPath);
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(_dropBreadcrumbs, transform, GetComponent<Rigidbody>());
+        _dropBreadcrumbs.start();
+        _dropBreadcrumbs.release();
     }
 }

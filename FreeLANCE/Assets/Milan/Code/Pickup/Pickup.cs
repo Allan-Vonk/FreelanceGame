@@ -24,6 +24,8 @@ public class Pickup : MonoBehaviour
         ScoreManager.instance.RefreshUI();
         ScoreManager.instance.SaveAndLoadPlayer();
 
+        SoundManager.instance.PlayCollectItem();
+
         gameObject.SetActive(false);
     }
 }
