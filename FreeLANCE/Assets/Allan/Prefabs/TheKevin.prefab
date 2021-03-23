@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
-  speed: 0.003
+  speed: 0.006
   unit: {fileID: 0}
   lastKnowPos: {x: 0, y: 0, z: 0}
 --- !u!114 &2185032693548986378
@@ -144,6 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_footstepEventPath: event:/SFX/Nightmare/GhostFootsteps
   m_GhostSoundsEventPath: event:/SFX/Nightmare/GhostSounds
-  m_GhostWindEventPath: event:/SFX/Nightmare/GhostWind
   m_JumpscareEventPath: 
+  m_player: {fileID: 0}
   m_stepDistance: 2
+  m_soundTriggerDistance: 0

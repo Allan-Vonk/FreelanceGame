@@ -465,6 +465,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallPrefab: {fileID: 3448538096933848663, guid: 665ce48946728584e8b5bb2edf062780, type: 3}
   doorPrefab: {fileID: 3448538096933848663, guid: ed1755ad43e81144984b55fe8a0f3419, type: 3}
+  pickupPrefab: {fileID: 5122791046976214738, guid: 982b219f42b666745a0f77a3204e8f98, type: 3}
+  pickups: 5
+  pickupSpawnOffset: {x: 0, y: 0.5, z: 0}
+  Player: {fileID: 2127310236}
 --- !u!64 &706523443
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -961,6 +965,10 @@ PrefabInstance:
     - target: {fileID: 7321209621470179288, guid: 8cce34ab30e79984db92d550deda9b68, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321209621470179289, guid: 8cce34ab30e79984db92d550deda9b68, type: 3}
+      propertyPath: timer
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7321209621470179289, guid: 8cce34ab30e79984db92d550deda9b68, type: 3}
       propertyPath: scoreText

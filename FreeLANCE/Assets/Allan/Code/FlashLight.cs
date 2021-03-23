@@ -12,7 +12,7 @@ public class FlashLight : MonoBehaviour
     }
     private void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.GetMouseButtonDown(0))
         {
             lightcomp.enabled = !lightcomp.enabled;
         }

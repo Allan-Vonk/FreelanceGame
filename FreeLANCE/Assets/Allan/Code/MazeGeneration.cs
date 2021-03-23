@@ -10,6 +10,10 @@ public class MazeGeneration : MonoBehaviour
     Node[,] nodeGrid;
     public GameObject wallPrefab;
     public GameObject doorPrefab;
+    public GameObject pickupPrefab;
+    public int pickups;
+    public Vector3 pickupSpawnOffset;
+    public GameObject Player;
     private List<Node>Cellset;
     Node EndNode;
     Pathfinding pf;
@@ -40,6 +44,7 @@ public class MazeGeneration : MonoBehaviour
         GenerateExit();
         GenerateWalls();
         MergeWalls();
+        GeneratePickups();
     }
     private void MergeWalls ()
     {
@@ -114,11 +119,35 @@ public class MazeGeneration : MonoBehaviour
         {
             if (node.walkable == false)
             {
-                GameObject wall = Instantiate(wallPrefab);
+                GameObject wall = Instantiate(wallPrefab,gameObject.transform);
                 Walls.Add(wall);
                 wall.transform.position = node.worldPosition + new Vector3(0,2,0);
             }
         }
+    }
+    private void GeneratePickups ()
+    {
+        List<Node>PickupNodes = GatherPossiblePickupPoints(Player.transform.position);
+        for (int i = 0; i < pickups; i++)
+        {
+            Instantiate(pickupPrefab, PickupNodes[Random.Range(0, PickupNodes.Count)].worldPosition + pickupSpawnOffset,Quaternion.identity);
+        }
+    }
+    private List<Node> GatherPossiblePickupPoints (Vector3 StartPos)
+    {
+        List<Node> nodes = new List<Node>();
+
+        foreach (Node node in grid.grid)
+        {
+            if (node.walkable)
+            {
+                if (pf.FindPath(StartPos, node.worldPosition) != null)
+                {
+                    nodes.Add(node);
+                }
+            }
+        }
+        return nodes;
     }
     private void GenerateExit ()
     {
