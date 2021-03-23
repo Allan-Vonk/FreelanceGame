@@ -51,14 +51,15 @@ public class NightMareMovement : MonoBehaviour
                 CanSeeTarget = false;
             }
         }
-        if (canSeeTarget)
+        Light FlashLight = Target.GetComponentInChildren<Camera>().gameObject.GetComponentInChildren<Light>();
+        if (canSeeTarget && FlashLight.enabled == true)
         {
             unit.StopPath();
             Vector3 direction = Target.transform.position - transform.position;
             transform.position += direction.normalized * speed;
             transform.LookAt(Target.transform.position);
         }
-        if (canSeeTarget == false && unit.Target == Vector3.zero)
+        if (canSeeTarget == false && unit.Target == Vector3.zero || canSeeTarget && FlashLight.enabled == false&& unit.Target == Vector3.zero)
         {
             if (possibleWanderTargets != null)
             {

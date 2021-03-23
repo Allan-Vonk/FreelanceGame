@@ -134,6 +134,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheKevin (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2185032693548986378, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
+      propertyPath: m_player
+      value: 
+      objectReference: {fileID: 2127310236}
+    - target: {fileID: 2185032693548986378, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
+      propertyPath: m_soundTriggerDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2185032693548986381, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
       propertyPath: Target
       value: 
@@ -148,7 +156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2185032693548986383, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.000015258789
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 2185032693548986383, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -184,6 +192,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
+--- !u!4 &54798848 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6848427345955931573, guid: c8aee01b8a967984293198a610cb4cb4, type: 3}
+  m_PrefabInstance: {fileID: 193380691}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &193380691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -288,6 +301,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheKevin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2185032693548986378, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
+      propertyPath: m_player
+      value: 
+      objectReference: {fileID: 2127310236}
+    - target: {fileID: 2185032693548986378, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
+      propertyPath: m_soundTriggerDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2185032693548986381, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
       propertyPath: Target
       value: 
@@ -302,7 +323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2185032693548986383, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.0999848
       objectReference: {fileID: 0}
     - target: {fileID: 2185032693548986383, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -338,11 +359,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
---- !u!4 &662362702 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6848427343931558531, guid: c8aee01b8a967984293198a610cb4cb4, type: 3}
-  m_PrefabInstance: {fileID: 193380691}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &706523438
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,11 +532,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822692922}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 662362702}
-  m_RootOrder: 2
+  m_Father: {fileID: 54798848}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &822692924
 Light:
@@ -648,7 +664,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b6cda48d4d53da345832c2c489d9bce0, type: 2}
+  - {fileID: 2100000, guid: c719e38f25a9480abd2480ab621a2949, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -703,6 +719,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheKevin (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2185032693548986378, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
+      propertyPath: m_player
+      value: 
+      objectReference: {fileID: 2127310236}
+    - target: {fileID: 2185032693548986378, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
+      propertyPath: m_soundTriggerDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2185032693548986381, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
       propertyPath: Target
       value: 
@@ -717,7 +741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2185032693548986383, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0000076293945
+      value: 1.0999924
       objectReference: {fileID: 0}
     - target: {fileID: 2185032693548986383, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -764,6 +788,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheKevin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2185032693548986378, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
+      propertyPath: m_player
+      value: 
+      objectReference: {fileID: 2127310236}
+    - target: {fileID: 2185032693548986378, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
+      propertyPath: m_soundTriggerDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2185032693548986381, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
       propertyPath: Target
       value: 
@@ -778,7 +810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2185032693548986383, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0000076293945
+      value: 1.0999924
       objectReference: {fileID: 0}
     - target: {fileID: 2185032693548986383, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -841,6 +873,14 @@ PrefabInstance:
     - target: {fileID: 2185032693548986371, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
       propertyPath: m_Name
       value: TheKevin
+      objectReference: {fileID: 0}
+    - target: {fileID: 2185032693548986378, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
+      propertyPath: m_player
+      value: 
+      objectReference: {fileID: 2127310236}
+    - target: {fileID: 2185032693548986378, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
+      propertyPath: m_soundTriggerDistance
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2185032693548986381, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
       propertyPath: Target
