@@ -994,9 +994,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1600608250}
+  - component: {fileID: 1600608251}
   - component: {fileID: 1600608249}
   m_Layer: 0
-  m_Name: SoundManager
+  m_Name: SFXSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1035,6 +1036,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1600608251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600608248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a604615fdef7864c82a401b9ff9202f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Player: {fileID: 2127310236}
+  m_CrowObject: {fileID: 1808956392767513227, guid: ed8bce3adc37d8f4c86e3e802598d443, type: 3}
+  m_CrowFlyObject: {fileID: 846379842668504022, guid: 9222330cc7f0482489d05ee552cb2d58, type: 3}
+  m_FoliageObject: {fileID: 5200141492086067050, guid: a4d3c12d3e9e9db4ab48c313023ad44f, type: 3}
+  m_WindObject: {fileID: 2585523048087834314, guid: eef8655802c306a40b4e35ea7861a6cc, type: 3}
+  m_CrowMinTime: 30
+  m_CrowMaxTime: 45
+  m_CrowFlyMinTime: 30
+  m_CrowFlyMaxTime: 45
+  m_FoliageMinTime: 120
+  m_FoliageMaxTime: 240
+  m_WindMinTime: 30
+  m_WindMaxTime: 60
 --- !u!1001 &1617366133
 PrefabInstance:
   m_ObjectHideFlags: 0
