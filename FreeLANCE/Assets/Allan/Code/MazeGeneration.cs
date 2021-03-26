@@ -181,7 +181,7 @@ public class MazeGeneration : MonoBehaviour
                 PossibleExits.Add(nodeGrid[1, i]);
             }
         }
-        if (PossibleExits.Count <= 0) SceneManager.LoadScene(0);
+        if (PossibleExits.Count <= 0) SceneManager.LoadScene(1);
 
         foreach (var item in PossibleExits)
         {
@@ -196,7 +196,7 @@ public class MazeGeneration : MonoBehaviour
         List<Vector3>path = ordered[0].ToList();
         if (path.Count < 40)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
         path.Reverse();
         EndNode = grid.NodeFromWorldPoint(path[0]);

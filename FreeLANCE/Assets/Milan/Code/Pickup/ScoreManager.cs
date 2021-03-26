@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -73,6 +74,8 @@ public class ScoreManager : MonoBehaviour
         else
         {
             timerText.text = string.Format("Timer is over.");
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene(3);
             timeisRunning = false;
         }
     }

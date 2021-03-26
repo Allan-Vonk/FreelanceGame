@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Allan/Scenes/Scenes/StartScene.unity
+    guid: 924bdbdead8144d41ab59b7c8a83b4c0
+  - enabled: 1
     path: Assets/Allan/Scenes/Allan's Corner.unity
     guid: f28ce34ca73cae544bd513c9a2186ca2
+  - enabled: 1
+    path: Assets/Allan/Scenes/Scenes/EndScene.unity
+    guid: 0ee01957078680f4ebdf7984c03facd6
+  - enabled: 1
+    path: Assets/Allan/Scenes/Scenes/OutOFTimer.unity
+    guid: 313263ecfea0532439c7e6dcd9db3f5a
   m_configObjects: {}

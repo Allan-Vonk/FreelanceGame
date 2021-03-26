@@ -998,7 +998,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7321209621470179289, guid: 8cce34ab30e79984db92d550deda9b68, type: 3}
       propertyPath: timer
-      value: 40
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7321209621470179289, guid: 8cce34ab30e79984db92d550deda9b68, type: 3}
       propertyPath: scoreText
@@ -1204,6 +1204,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2185032693548986369, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2185032693548986371, guid: 988cfbe77830d6747a548bd6136212bf, type: 3}
       propertyPath: m_Name
       value: TheKevin

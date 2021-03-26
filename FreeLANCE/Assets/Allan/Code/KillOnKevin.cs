@@ -9,7 +9,8 @@ public class KillOnKevin : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            SceneManager.LoadScene(0);
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene(2);
         }
     }
 }
