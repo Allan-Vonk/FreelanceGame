@@ -6,75 +6,182 @@ using UnityEngine.SceneManagement;
 
 public class MazeGeneration : MonoBehaviour
 {
-    Grid grid;
-    Node[,] nodeGrid;
+    #region Variables
+    //Prefabs
     public GameObject wallPrefab;
     public GameObject doorPrefab;
     public GameObject pickupPrefab;
+    //Configuration for pickups
     public int pickups;
     public Vector3 pickupSpawnOffset;
+    //Configuration for difficulty
+    public int pathDistanceTreshold;
+    //Configuration for wall placement
+    public Vector3 wallOffset = new Vector3(0,2,0);
+    //Player reference
     public GameObject Player;
+    //Privates
     private List<Node>Cellset;
-    Node EndNode;
-    Pathfinding pf;
-    List<Node>PossibleExits;
-    List<Queue<Vector3>>PathList;
-
-    List<GameObject>Walls;
-    MeshFilter mf;
-    MeshCollider mc;
+    private Node EndNode;
+    private Pathfinding pf;
+    //Usefull references
+    private List<GameObject>Walls;
+    //Mesh
+    private MeshFilter mf;
+    private MeshCollider mc;
+    //Grid
+    private Grid grid;
+    private Node[,] nodeGrid;
+    #endregion Variables
     private void Start ()
     {
+        #region variableInstantiating
+        //References
         mc = GetComponent<MeshCollider>();
         mf = GetComponent<MeshFilter>();
-        Walls = new List<GameObject>();
         pf = GetComponent<Pathfinding>();
-        PathList = new List<Queue<Vector3>>();
         grid = GetComponent<Grid>();
         nodeGrid = grid.grid;
-        Cellset = new List<Node>();
-        PossibleExits = new List<Node>();
-
-        initialize();
+        //Lists
+        Walls = new List<GameObject>();
+        #endregion
+        initializeMazeConstruction();
     }
-    private void initialize ()
+    private void initializeMazeConstruction ()
     {
         GenerateMaze();
-        //ClearStart();
         GenerateExit();
-        GenerateWalls();
+        InstantiateWalls();
         MergeWalls();
         GeneratePickups();
     }
-    private void MergeWalls ()
+    #region GenerateMaze
+    /// <summary>
+    /// Generates the maze using Prims algorithme
+    /// </summary>
+    private void GenerateMaze ()
     {
-        List<CombineInstance> combineInstances = new List<CombineInstance>();
-        foreach (var item in Walls)
-        {
-            CombineInstance ci = new CombineInstance();
-            MeshFilter meshFilter = item.GetComponent<MeshFilter>();
-            ci.mesh = meshFilter.sharedMesh;
-            ci.transform = meshFilter.transform.localToWorldMatrix;
-            combineInstances.Add(ci);
-            item.SetActive(false);
-        }
-        CombineInstance[] instanceArray = combineInstances.ToArray();
-        mf.mesh = new Mesh();
-        mf.mesh.CombineMeshes(instanceArray);
-        mf.mesh.RecalculateNormals();
-        mf.mesh.RecalculateTangents();
-        mf.mesh.RecalculateBounds();
-        mc.sharedMesh = mf.mesh;
+        Node startnode = nodeGrid[1,1];
+        ImplementPrims(startnode);
     }
-    private void ClearStart ()
+    private void ImplementPrims (Node startNode)
     {
-        Node startNode = nodeGrid[1,1];
-        List<Node>neigbours = grid.GetNeighbours(startNode);
-        foreach (Node node in neigbours)
+        Cellset = new List<Node>();
+        Cellset.Add(startNode);
+
+        while (Cellset.Count > 0)
         {
-            node.walkable = true;
+            Node randomNode = Cellset[Random.Range(0,Cellset.Count)];
+            List<Node> neighbours = grid.Get4Neighbours(randomNode);
+            int walkableNeighbours = GetAmountOfWalkableNeighbours(neighbours);
+            if (walkableNeighbours < 2)
+            {
+                randomNode.walkable = true;
+                List<Node>UnvisitedNeighbours = GetUnvisitedNeighbours(neighbours);
+                UnvisitedNeighbours = setNodesToVisited(UnvisitedNeighbours);
+                Cellset.AddRange(UnvisitedNeighbours);
+
+            }
+            bool isRandomNodeWalkable = CheckIfNodeIsEdgeNode(randomNode);
+            if (isRandomNodeWalkable == true) randomNode.walkable = false;
+            Cellset.Remove(randomNode);
         }
     }
+    private int GetAmountOfWalkableNeighbours (List<Node> neighbours)
+    {
+        int count = 0;
+        foreach (Node node in neighbours)
+        {
+            if (node.walkable == true) count++;
+        }
+        return count;
+    }
+    private List<Node> GetUnvisitedNeighbours (List<Node> neighbours)
+    {
+        List<Node>unvisitedNeighbours = new List<Node>();
+        foreach (Node node in neighbours)
+        {
+            if (node.visited == false) unvisitedNeighbours.Add(node);
+        }
+        return unvisitedNeighbours;
+    }
+    private bool CheckIfNodeIsEdgeNode (Node node)
+    {
+        if (node.gridX == 0 || node.gridX == grid.gridSizeX - 1 || node.gridY == 0 || node.gridY == grid.gridSizeY - 1)
+        {
+            return true;
+        }
+        else return false;
+    }
+    private List<Node> setNodesToVisited (List<Node>Nodes)
+    {
+        List<Node>unvisitedNodes = new List<Node>();
+        foreach (Node node in Nodes)
+        {
+            node.visited = true;
+            unvisitedNodes.Add(node);
+        }
+        return unvisitedNodes;
+    }
+    #endregion
+    #region GenerateExit
+    /// <summary>
+    /// Looks where the exit must be and spawns all necesary doors
+    /// </summary>
+    private void GenerateExit ()
+    {
+        Node EndNode = GetFarthestNode();
+        ClearEnd(EndNode);
+        InstantiateDoors();
+    }
+    private Node GetFarthestNode ()
+    {
+        List<Node> PossibleExits = GetPossibleExits();
+        if (PossibleExits.Count <= 0) SceneManager.LoadScene(1);
+        List<Queue<Vector3>>PathList = GetListOfPathsToPossibleExits(PossibleExits);
+        List<Vector3>longestPath = GetLongestPath(PathList).ToList();
+        if (longestPath.Count < pathDistanceTreshold) SceneManager.LoadScene(1);
+        EndNode = grid.NodeFromWorldPoint(longestPath[longestPath.Count - 1]);
+        return EndNode;
+    }
+    private List<Node> GetPossibleExits ()
+    {
+        List<Node>possibleExits = new List<Node>();
+        for (int x = 0; x < grid.gridSizeX; x++)
+        {
+            for (int y = 0; y < grid.gridSizeY; y++)
+            {
+                Node node = nodeGrid[x,y];
+                if (node.gridX == 1 && node.gridY > 0 || node.gridX == grid.gridSizeX - 2 && node.gridY < grid.gridSizeY - 2 || node.gridY == 1 && node.gridX > 0 || node.gridY == grid.gridSizeY - 2 && node.gridX < grid.gridSizeX - 2)
+                {
+                    possibleExits.Add(node);
+                }
+            }
+        }
+        return possibleExits;
+    }
+    private List<Queue<Vector3>> GetListOfPathsToPossibleExits (List<Node> possibleExits)
+    {
+        List<Queue<Vector3>>paths = new List<Queue<Vector3>>();
+        foreach (var item in possibleExits)
+        {
+            Queue<Vector3>Path = pf.FindPath(nodeGrid[1, 1].worldPosition, item.worldPosition);
+            if (Path != null)
+            {
+                paths.Add(Path);
+            }
+        }
+        return paths;
+    }
+    private Queue<Vector3> GetLongestPath (List<Queue<Vector3>>paths) 
+    {
+        paths = paths.OrderBy(f => f.Count).ToList();
+        return paths[paths.Count - 1];
+    }
+    /// <summary>
+    /// Clears the end of the maze of walls
+    /// </summary>
+    /// <param name="node"></param>
     private void ClearEnd (Node node)
     {
         List<Node>neigbours = grid.Get4Neighbours(node);
@@ -83,48 +190,94 @@ public class MazeGeneration : MonoBehaviour
             node1.walkable = true;
         }
     }
-    private void GenerateMaze ()
+    private void InstantiateDoors ()
     {
-        Node startnode = nodeGrid[1,1];
-        Cellset.Add(startnode);
-        while (Cellset.Count > 0)
+        foreach (Node node in grid.edgeNodes)
         {
-            Node randomNode = Cellset[Random.Range(0,Cellset.Count)];
-            List<Node> neigbours = grid.Get4Neighbours(randomNode);
-
-            int count = 0;
-            foreach (Node node in neigbours)
+            if (node.walkable == true)
             {
-                if (node.walkable == true)count++;
+                BuildWallPiece(doorPrefab, node);
             }
-            if (count <2)
-            {
-                randomNode.walkable = true;
-                foreach (Node node in neigbours)
-                {
-                    if (node.visited == false)Cellset.Add(node);
-                    node.visited = true;
-                }
-            }
-            if (randomNode.gridX == 0 || randomNode.gridX == grid.gridSizeX - 1 || randomNode.gridY == 0 || randomNode.gridY == grid.gridSizeY - 1)
-            {
-                randomNode.walkable = false;
-            }
-            Cellset.Remove(randomNode);
         }
     }
-    private void GenerateWalls ()
+    #endregion
+    #region GenerateWalls
+    /// <summary>
+    /// Spawns wall prefabs according to the nodegrid
+    /// </summary>
+    private void InstantiateWalls ()
     {
         foreach (Node node in nodeGrid)
         {
             if (node.walkable == false)
             {
-                GameObject wall = Instantiate(wallPrefab,gameObject.transform);
-                Walls.Add(wall);
-                wall.transform.position = node.worldPosition + new Vector3(0,2,0);
+                GameObject Wall = BuildWallPiece(wallPrefab,node);
+                Walls.Add(Wall);
             }
         }
     }
+    private GameObject BuildWallPiece (GameObject prefab,Node node)
+    {
+        GameObject wall = Instantiate(prefab,gameObject.transform);
+        wall.transform.position = node.worldPosition + wallOffset;
+        return wall;
+    }
+    #endregion
+    #region MergeWalls
+    /// <summary>
+    /// Comibines all the meshes from the gameobjects in "Walls" into one mesh
+    /// </summary>
+    private void MergeWalls ()
+    {
+        List<CombineInstance> combineInstances;
+        combineInstances = BuildCombineInstances(Walls);
+        CombineInstance[] combineInstanceArray = combineInstances.ToArray();
+        mf.mesh = BuildMesh(combineInstanceArray);
+        mc.sharedMesh = mf.mesh;
+        DisableWalls(Walls);
+    }
+    private List<CombineInstance> BuildCombineInstances (List<GameObject>walls)
+    {
+        List<CombineInstance>buildedCombineInstances = new List<CombineInstance>();
+        foreach (GameObject Wall in walls)
+        {
+            MeshFilter mf = Wall.GetComponent<MeshFilter>();
+            CombineInstance ci = new CombineInstance
+            {
+                mesh = mf.sharedMesh,
+                transform = mf.transform.localToWorldMatrix
+            };
+            buildedCombineInstances.Add(ci);
+        }
+        return buildedCombineInstances;
+    }
+    private void DisableWalls (List<GameObject> Walls)
+    {
+        foreach (GameObject Wall in Walls)
+        {
+            Wall.SetActive(false);
+        }
+    }
+    private Mesh BuildMesh (CombineInstance[] CombineInstances)
+    {
+        Mesh mesh = new Mesh();
+        mesh.CombineMeshes(CombineInstances);
+        RecalculateMesh(mesh);
+        return mesh;
+    }
+    private Mesh RecalculateMesh(Mesh mesh)
+    {
+        mesh.RecalculateNormals();
+        mesh.RecalculateTangents();
+        mesh.RecalculateBounds();
+        return mesh;
+    }
+    #endregion
+    #region GeneratePickups
+
+    /// <summary>
+    /// Spawns pickups randomly across the map
+    /// </summary>
     private void GeneratePickups ()
     {
         List<Node>PickupNodes = GatherPossiblePickupPoints(Player.transform.position);
@@ -133,81 +286,25 @@ public class MazeGeneration : MonoBehaviour
             Instantiate(pickupPrefab, PickupNodes[Random.Range(0, PickupNodes.Count)].worldPosition + pickupSpawnOffset,Quaternion.identity);
         }
     }
+    /// <summary>
+    /// Gathers positions where pickups can be spawned
+    /// </summary>
+    /// <param name="StartPos"></param>
+    /// <returns></returns>
     private List<Node> GatherPossiblePickupPoints (Vector3 StartPos)
     {
-        List<Node> nodes = new List<Node>();
-
+        List<Node> spawnableNodes = new List<Node>();
         foreach (Node node in grid.grid)
         {
-            if (node.walkable)
-            {
-                if (pf.FindPath(StartPos, node.worldPosition) != null)
-                {
-                    nodes.Add(node);
-                }
-            }
+            bool nodeIsReachable = checkIfNodeIsReachable(node, StartPos);
+            if (nodeIsReachable == true) spawnableNodes.Add(node);
         }
-        return nodes;
+        return spawnableNodes;
     }
-    private void GenerateExit ()
+    private bool checkIfNodeIsReachable (Node node, Vector3 playerPos)
     {
-        //X
-        for (int i = 0; i < grid.gridSizeX; i++)
-        {
-            if (nodeGrid[i, 1].walkable)
-            {
-                PossibleExits.Add(nodeGrid[i, grid.gridSizeY-2]);
-            }
-        }
-        for (int i = 0; i < grid.gridSizeX; i++)
-        {
-            if (nodeGrid[i, grid.gridSizeY - 2].walkable)
-            {
-                PossibleExits.Add(nodeGrid[i, 1]);
-            }
-        }
-        //Y
-        for (int i = 0; i < grid.gridSizeY; i++)
-        {
-            if (nodeGrid[1, i].walkable)
-            {
-                PossibleExits.Add(nodeGrid[grid.gridSizeX-2, i]);
-            }
-        }
-        for (int i = 0; i < grid.gridSizeY; i++)
-        {
-            if (nodeGrid[grid.gridSizeX - 2, i].walkable)
-            {
-                PossibleExits.Add(nodeGrid[1, i]);
-            }
-        }
-        if (PossibleExits.Count <= 0) SceneManager.LoadScene(1);
-
-        foreach (var item in PossibleExits)
-        {
-            Queue<Vector3>Path = pf.FindPath(nodeGrid[1, 1].worldPosition, item.worldPosition);
-            if (Path != null)
-            {
-                PathList.Add(Path);
-            }
-        }
-        List<Queue<Vector3>> ordered = PathList.OrderBy(f => f.Count).ToList();
-        ordered.Reverse();
-        List<Vector3>path = ordered[0].ToList();
-        if (path.Count < 40)
-        {
-            SceneManager.LoadScene(1);
-        }
-        path.Reverse();
-        EndNode = grid.NodeFromWorldPoint(path[0]);
-        ClearEnd(EndNode);
-        foreach (Node node in grid.edgeNodes)
-        {
-            if (node.walkable == true)
-            {
-                GameObject wall = Instantiate(doorPrefab);
-                wall.transform.position = node.worldPosition + new Vector3(0, 2, 0);
-            }
-        }
+        if (node.walkable && pf.FindPath(playerPos, node.worldPosition) != null) return true;
+        else return false;
     }
+    #endregion
 }
