@@ -4,22 +4,25 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(Grid),typeof(Pathfinding),typeof(MeshRenderer))]
+[RequireComponent(typeof(MeshFilter))]
 public class MazeGeneration : MonoBehaviour
 {
     #region Variables
-    //Prefabs
+    [Header("Prefabs")]
     public GameObject wallPrefab;
     public GameObject doorPrefab;
     public GameObject pickupPrefab;
-    //Configuration for pickups
-    public int pickups;
+    [Header("PickupConfig")]
+    public int pickups = 5;
     public Vector3 pickupSpawnOffset;
-    //Configuration for difficulty
-    public int pathDistanceTreshold;
-    //Configuration for wall placement
-    public Vector3 wallOffset = new Vector3(0,2,0);
-    //Player reference
+    [Header("Difficulty")]
+    public int pathDistanceTreshold = 40;
+    [Header("WallPlacement")]
+    public Vector3 wallOffset;
+    [Header("References")]
     public GameObject Player;
+
     //Privates
     private List<Node>Cellset;
     private Node EndNode;
@@ -80,7 +83,6 @@ public class MazeGeneration : MonoBehaviour
                 List<Node>UnvisitedNeighbours = GetUnvisitedNeighbours(neighbours);
                 UnvisitedNeighbours = setNodesToVisited(UnvisitedNeighbours);
                 Cellset.AddRange(UnvisitedNeighbours);
-
             }
             bool isRandomNodeWalkable = CheckIfNodeIsEdgeNode(randomNode);
             if (isRandomNodeWalkable == true) randomNode.walkable = false;
